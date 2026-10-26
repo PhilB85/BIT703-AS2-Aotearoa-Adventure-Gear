@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop hiking, camping and outdoor equipment at Aotearoa Adventure Gear.">
+    <title>Home | Aotearoa Adventure Gear</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear"
+                         class="site-logo">
+                </a>
+
+                <form class="header-search" id="siteSearch" role="search">
+                    <label for="searchInput" class="visually-hidden">
+                        Search products
+                    </label>
+                    <input type="search" id="searchInput"
+                           placeholder="Search outdoor gear..."
+                           aria-label="Search products">
+                    <button type="submit" aria-label="Submit search">
+                        &#128269;
+                    </button>
+                </form>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavigation">
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                               aria-current="page"
+                               href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#help">Help</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="cart-link" href="cart.html">
+                                &#128722; Your Cart
+                                <span id="cartCount">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section">
+            <div class="container text-center">
+                <h1>Your Adventure Starts Here</h1>
+                <p class="hero-intro">
+                    Quality outdoor equipment for exploring Aotearoa,
+                    from the mountains to the coast.
+                </p>
+
+                <div class="hero-gallery">
+                    <img src="images/hero-hiking.jpg"
+                         alt="Hiking equipment for outdoor adventures">
+                    <img src="images/hero-camping.jpg"
+                         alt="Camping equipment and tents">
+                    <img src="images/hero-backpack.jpg"
+                         alt="Outdoor hiking backpack">
+                </div>
+
+                <a href="shop.html" class="primary-button">
+                    Shop Now
+                </a>
+            </div>
+        </section>
+
+       
+<!-- FEATURED PRODUCTS CAROUSEL -->
+<section class="featured-section" id="featured">
+    <div class="container">
+
+        <h2 class="section-title">Featured Products</h2>
+
+        <div id="featuredCarousel"
+             class="carousel slide"
+             aria-label="Featured outdoor products">
+
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1: BACKPACK AND TENT -->
+                <div class="carousel-item active">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=alpine-pack">
+                                    <img src="images/product-backpack.jpg"
+                                         alt="Alpine Explorer Backpack">
+                                    <h3>Alpine Explorer Backpack</h3>
+                                </a>
+                                <p class="product-price">$189.00</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=camping-tent">
+                                    <img src="images/product-tent.jpg"
+                                         alt="Southern Cross Camping Tent">
+                                    <h3>Southern Cross Camping Tent</h3>
+                                </a>
+                                <p class="product-price">$349.00</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: BOOTS AND SLEEPING BAG -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=hiking-boots">
+                                    <img src="images/product-boots.jpg"
+                                         alt="Summit Hiking Boots">
+                                    <h3>Summit Hiking Boots</h3>
+                                </a>
+                                <p class="product-price">$229.00</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=sleeping-bag">
+                                    <img src="images/product-sleepingbag.jpg"
+                                         alt="Alpine Thermal Sleeping Bag">
+                                    <h3>Alpine Thermal Sleeping Bag</h3>
+                                </a>
+                                <p class="product-price">$159.00</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: WATER BOTTLE AND HEADLAMP -->
+                <div class="carousel-item">
+                    <div class="row g-4">
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=water-bottle">
+                                    <img src="images/product-bottle.jpg"
+                                         alt="Trail Water Bottle">
+                                    <h3>Trail Water Bottle</h3>
+                                </a>
+                                <p class="product-price">$49.00</p>
+                            </article>
+                        </div>
+
+                        <div class="col-md-6">
+                            <article class="featured-card">
+                                <a href="product.html?id=headlamp">
+                                    <img src="images/product-headlamp.jpg"
+                                         alt="Explorer Headlamp">
+                                    <h3>Explorer Headlamp</h3>
+                                </a>
+                                <p class="product-price">$79.00</p>
+                            </article>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- PREVIOUS ARROW -->
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#featuredCarousel"
+                    data-bs-slide="prev"
+                    aria-label="Previous featured products">
+                <span aria-hidden="true">&#10094;</span>
+            </button>
+
+            <!-- NEXT ARROW -->
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#featuredCarousel"
+                    data-bs-slide="next"
+                    aria-label="Next featured products">
+                <span aria-hidden="true">&#10095;</span>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter-section" id="newsletter">
+            <div class="container">
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-6">
+                        <h2>Newsletter</h2>
+                        <p>
+                            Get outdoor tips, new product updates
+                            and special offers from Aotearoa Adventure Gear.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form id="newsletterForm" novalidate>
+                            <div class="newsletter-controls">
+                                <label class="visually-hidden"
+                                       for="newsletterEmail">
+                                    Email address
+                                </label>
+                                <input type="email"
+                                       id="newsletterEmail"
+                                       name="email"
+                                       placeholder="Email Address"
+                                       autocomplete="email"
+                                       required>
+                                <button type="submit">
+                                    Subscribe
+                                </button>
+                            </div>
+                            <p id="newsletterMessage"
+                               class="form-message"
+                               role="status"
+                               aria-live="polite"></p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCT GALLERY -->
+        <section class="product-gallery-section">
+            <div class="container">
+
+                <h2 class="visually-hidden">
+                    Explore Our Outdoor Gear
+                </h2>
+
+                <div class="product-gallery-grid">
+
+                    <article class="gallery-product gallery-product-large">
+                        <a href="product.html?id=alpine-pack">
+                            <img src="images/product-backpack.jpg"
+                                 alt="Alpine Explorer Backpack">
+                            <div class="product-info">
+                                <h3>Alpine Explorer Backpack</h3>
+                                <span class="rating" aria-label="4 out of 5 stars">
+                                    ★★★★☆
+                                </span>
+                            </div>
+                            <p>$189.00</p>
+                        </a>
+                    </article>
+
+                    <article class="gallery-product">
+                        <a href="product.html?id=camping-tent">
+                            <img src="images/product-tent.jpg"
+                                 alt="Southern Cross Camping Tent">
+                            <div class="product-info">
+                                <h3>Southern Cross Camping Tent</h3>
+                                <span class="rating" aria-label="5 out of 5 stars">
+                                    ★★★★★
+                                </span>
+                            </div>
+                            <p>$349.00</p>
+                        </a>
+                    </article>
+
+                    <article class="gallery-product">
+                        <a href="product.html?id=hiking-boots">
+                            <img src="images/product-boots.jpg"
+                                 alt="Summit Hiking Boots">
+                            <div class="product-info">
+                                <h3>Summit Hiking Boots</h3>
+                                <span class="rating" aria-label="4 out of 5 stars">
+                                    ★★★★☆
+                                </span>
+                            </div>
+                            <p>$229.00</p>
+                        </a>
+                    </article>
+
+                    <article class="gallery-product">
+                        <a href="product.html?id=sleeping-bag">
+                            <img src="images/product-sleepingbag.jpg"
+                                 alt="Alpine Thermal Sleeping Bag">
+                            <div class="product-info">
+                                <h3>Alpine Thermal Sleeping Bag</h3>
+                                <span class="rating" aria-label="4 out of 5 stars">
+                                    ★★★★☆
+                                </span>
+                            </div>
+                            <p>$159.00</p>
+                        </a>
+                    </article>
+
+                    <article class="gallery-product">
+                        <a href="product.html?id=water-bottle">
+                            <img src="images/product-bottle.jpg"
+                                 alt="Trail Stainless Steel Water Bottle">
+                            <div class="product-info">
+                                <h3>Trail Water Bottle</h3>
+                                <span class="rating" aria-label="5 out of 5 stars">
+                                    ★★★★★
+                                </span>
+                            </div>
+                            <p>$49.00</p>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+            <div class="container text-center">
+                <h2>About Our Shop</h2>
+                <p>
+                    Aotearoa Adventure Gear is passionate about helping
+                    people enjoy New Zealand's great outdoors.
+                    From weekend camping trips to challenging alpine
+                    adventures, we offer equipment to help you explore
+                    with confidence.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="help">
+        <div class="container">
+
+            <div class="row g-4 footer-columns">
+
+                <div class="col-lg-4 col-md-6">
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear"
+                         class="footer-logo">
+                    <p>
+                        Outdoor equipment for adventures
+                        throughout Aotearoa New Zealand.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h3>Main Menu</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="#help">Help</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html">Our Company</a></li>
+                        <li><a href="#newsletter">Newsletter</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="#featured">Featured Gear</a></li>
+                        <li><a href="shop.html">All Products</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h3>Find Us On</h3>
+                    <p>
+                        Follow our adventures and discover
+                        the latest outdoor gear.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                &copy; 2026 Aotearoa Adventure Gear.
+                All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    
+<!-- FLOATING BACK TO TOP BUTTON -->
+<a href="#top"
+   id="backToTop"
+   class="back-to-top"
+   aria-label="Back to top"
+   title="Back to top">
+    &#8593;
+</a>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

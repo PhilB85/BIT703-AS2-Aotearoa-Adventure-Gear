@@ -1,0 +1,415 @@
+
+<!DOCTYPE html>
+<html lang="en-NZ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Enter shipping information for your Aotearoa Adventure Gear order.">
+
+    <title>Shipping Details | Aotearoa Adventure Gear</title>
+
+    <link rel="stylesheet"
+          href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear Logo"
+                         class="site-logo">
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="shop.html">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#help">Help</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="cart-link"
+                               href="cart.html">
+                                &#128722; Your Cart
+                                <span id="cartCount">0</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="shipping-page">
+
+        <!-- CHECKOUT PROGRESS -->
+        <section class="checkout-progress-section">
+            <div class="container">
+
+                <nav class="checkout-progress"
+                     aria-label="Checkout progress">
+
+                    <div class="checkout-step">
+                        1. Shopping Cart
+                    </div>
+
+                    <div class="checkout-step active"
+                         aria-current="step">
+                        2. Shipping Details
+                    </div>
+
+                    <div class="checkout-step">
+                        3. Payment Options
+                    </div>
+
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- SHIPPING DETAILS CONTENT -->
+        <section class="shipping-content-section">
+            <div class="container">
+
+                <div class="shipping-layout">
+
+                    <!-- LEFT: SHIPPING FORM -->
+                    <div class="shipping-form-column">
+
+                        <h1>Shipping Details</h1>
+
+                        <form id="shippingForm" novalidate>
+
+                            <div class="shipping-form-grid">
+
+                                <!-- First Name -->
+                                <div class="shipping-field">
+                                    <label for="firstName"
+                                           class="visually-hidden">
+                                        First Name
+                                    </label>
+
+                                    <input type="text"
+                                           id="firstName"
+                                           name="firstName"
+                                           placeholder="First Name"
+                                           autocomplete="given-name"
+                                           minlength="2"
+                                           maxlength="50"
+                                           required>
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="shipping-field">
+                                    <label for="lastName"
+                                           class="visually-hidden">
+                                        Last Name
+                                    </label>
+
+                                    <input type="text"
+                                           id="lastName"
+                                           name="lastName"
+                                           placeholder="Last Name"
+                                           autocomplete="family-name"
+                                           minlength="2"
+                                           maxlength="50"
+                                           required>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="shipping-field full-width">
+                                    <label for="address1"
+                                           class="visually-hidden">
+                                        Street Address
+                                    </label>
+
+                                    <input type="text"
+                                           id="address1"
+                                           name="address1"
+                                           placeholder="Address"
+                                           autocomplete="address-line1"
+                                           minlength="5"
+                                           maxlength="120"
+                                           required>
+                                </div>
+
+                                <!-- Address Line 2 -->
+                                <div class="shipping-field full-width">
+                                    <label for="address2"
+                                           class="visually-hidden">
+                                        Address Line 2
+                                    </label>
+
+                                    <input type="text"
+                                           id="address2"
+                                           name="address2"
+                                           placeholder="Address 2 (optional)"
+                                           autocomplete="address-line2"
+                                           maxlength="120">
+                                </div>
+
+                                <!-- Country -->
+                                <div class="shipping-field">
+                                    <label for="country"
+                                           class="visually-hidden">
+                                        Country
+                                    </label>
+
+                                    <select id="country"
+                                            name="country"
+                                            autocomplete="country"
+                                            required>
+
+                                        <option value="">
+                                            Select Country
+                                        </option>
+
+                                        <option value="NZ">
+                                            New Zealand
+                                        </option>
+
+                                    </select>
+                                </div>
+
+                                <!-- City -->
+                                <div class="shipping-field">
+                                    <label for="city"
+                                           class="visually-hidden">
+                                        City
+                                    </label>
+
+                                    <input type="text"
+                                           id="city"
+                                           name="city"
+                                           placeholder="City / Town"
+                                           autocomplete="address-level2"
+                                           minlength="2"
+                                           maxlength="80"
+                                           required>
+                                </div>
+
+                                <!-- Postcode -->
+                                <div class="shipping-field">
+                                    <label for="postcode"
+                                           class="visually-hidden">
+                                        Postal Code
+                                    </label>
+
+                                    <input type="text"
+                                           id="postcode"
+                                           name="postcode"
+                                           placeholder="Zip / Postal Code"
+                                           autocomplete="postal-code"
+                                           inputmode="numeric"
+                                           pattern="[0-9]{4}"
+                                           title="Enter a four-digit New Zealand postcode"
+                                           maxlength="4"
+                                           required>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="shipping-field">
+                                    <label for="phone"
+                                           class="visually-hidden">
+                                        Phone Number
+                                    </label>
+
+                                    <input type="tel"
+                                           id="phone"
+                                           name="phone"
+                                           placeholder="Phone Number"
+                                           autocomplete="tel"
+                                           minlength="8"
+                                           maxlength="20"
+                                           required>
+                                </div>
+
+                            </div>
+
+                            <!-- DELIVERY OPTIONS -->
+                            <fieldset class="delivery-options">
+
+                                <legend class="visually-hidden">
+                                    Choose a delivery option
+                                </legend>
+
+                                <label class="delivery-option">
+
+                                    <input type="radio"
+                                           name="deliveryMethod"
+                                           value="standard"
+                                           checked>
+
+                                    <span>
+                                        <strong id="standardDeliveryLabel">
+                                            Standard Shipping
+                                        </strong>
+
+                                        <small>
+                                            Estimated 2–5 working days
+                                        </small>
+                                    </span>
+
+                                </label>
+
+                                <label class="delivery-option">
+
+                                    <input type="radio"
+                                           name="deliveryMethod"
+                                           value="express">
+
+                                    <span>
+                                        <strong>
+                                            Next Day Delivery — $20
+                                        </strong>
+
+                                        <small>
+                                            Demonstration option;
+                                            delivery not guaranteed
+                                        </small>
+                                    </span>
+
+                                </label>
+
+                            </fieldset>
+
+                            <!-- VALIDATION MESSAGE -->
+                            <p id="shippingFormMessage"
+                               class="shipping-form-message"
+                               role="status"
+                               aria-live="polite"></p>
+
+                            <!-- FORM ACTIONS -->
+                            <div class="shipping-actions">
+
+                                <button type="submit"
+                                        class="cart-next-button">
+                                    Next
+                                </button>
+
+                                <button type="button"
+                                        id="shippingCancelButton"
+                                        class="cart-cancel-button">
+                                    Cancel
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <!-- RIGHT: ORDER SUMMARY -->
+                    <aside class="shipping-summary-column">
+
+                        <h2>Summary</h2>
+
+                        <div id="shippingSummaryProducts">
+                            <!-- Cart products inserted by JavaScript -->
+                        </div>
+
+                        <details class="shipping-voucher">
+                            <summary>Have a voucher?</summary>
+                            <p>
+                                Voucher discounts are not available
+                                in this demonstration checkout.
+                            </p>
+                        </details>
+
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="shippingSubtotal">$0.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="shippingCost">$0.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>GST (included)</span>
+                            <span id="shippingGST">$0.00</span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <strong id="shippingTotal">$0.00</strong>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="shop-footer">
+
+        <div class="container text-center">
+
+            <nav aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <span>|</span>
+                <a href="index.html#about">About</a>
+                <span>|</span>
+                <a href="shop.html">Shop</a>
+                <span>|</span>
+                <a href="index.html#help">Help</a>
+            </nav>
+
+            <p>&copy; 2026 Aotearoa Adventure Gear</p>
+
+        </div>
+
+    </footer>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

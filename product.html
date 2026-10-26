@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en-NZ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="View outdoor equipment details, reviews and similar products at Aotearoa Adventure Gear.">
+
+    <title>Product Details | Aotearoa Adventure Gear</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body id="top">
+
+    <!-- WEBSITE HEADER -->
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear Logo"
+                         class="site-logo">
+                </a>
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="shop.html">
+                                Shop
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#help">
+                                Help
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="cart-link"
+                               href="cart.html">
+                                &#128722; Your Cart
+                                <span id="cartCount">0</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- PRODUCT DETAILS -->
+        <section class="product-detail-section">
+
+            <div class="container">
+
+                <div class="product-detail-layout">
+
+                    <!-- Large Product Image -->
+                    <div class="product-detail-image">
+
+                        <img id="detailProductImage"
+                             src="images/product-backpack.jpg"
+                             alt="Alpine Explorer Backpack">
+
+                    </div>
+
+                    <!-- Product Information -->
+                    <div class="product-detail-info">
+
+                        <h1 id="detailProductName">
+                            Alpine Explorer Backpack
+                        </h1>
+
+                        <div class="detail-review-summary">
+
+                            <span id="detailProductRating"
+                                  class="rating"
+                                  aria-label="4 out of 5 stars">
+                                ★★★★☆
+                            </span>
+
+                            <span id="detailReviewCount">
+                                5 reviews
+                            </span>
+
+                        </div>
+
+                        <div class="detail-price-row">
+
+                            <p id="detailProductPrice">
+                                $189.00
+                            </p>
+
+                            <div class="model-selector">
+
+                                <label for="productModel"
+                                       class="visually-hidden">
+                                    Select Model
+                                </label>
+
+                                <select id="productModel" required>
+                                    <option value="">
+                                        Select Model
+                                    </option>
+                                    <option value="standard">
+                                        Standard
+                                    </option>
+                                    <option value="premium">
+                                        Premium
+                                    </option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <p id="detailProductDescription"
+                           class="detail-description">
+
+                            The Alpine Explorer Backpack is
+                            designed for outdoor adventures
+                            across Aotearoa New Zealand.
+                            Comfortable, durable and practical
+                            for your next hiking trip.
+
+                        </p>
+
+                        <!-- Quantity and Cart -->
+                        <div class="detail-purchase-controls">
+
+                            <div class="quantity-control">
+
+                                <label for="productQuantity">
+                                    Quantity
+                                </label>
+
+                                <input type="number"
+                                       id="productQuantity"
+                                       name="quantity"
+                                       min="1"
+                                       max="20"
+                                       step="1"
+                                       value="1"
+                                       required>
+
+                            </div>
+
+                            <button type="button"
+                                    id="addToCartButton"
+                                    class="add-to-cart-button">
+                                Add To Cart
+                            </button>
+
+                        </div>
+
+                        <p id="addToCartMessage"
+                           class="cart-feedback"
+                           role="status"
+                           aria-live="polite"></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SIMILAR PRODUCTS -->
+        <section class="similar-products-section">
+
+            <div class="container">
+
+                <h2>Similar Products</h2>
+
+                <div class="similar-products-grid"
+                     id="similarProducts">
+
+                    <!-- Product 1 -->
+                    <article class="similar-product">
+
+                        <a href="product.html?id=camping-tent">
+
+                            <img src="images/product-tent.jpg"
+                                 alt="Southern Cross Camping Tent">
+
+                        </a>
+
+                        <div>
+
+                            <a href="product.html?id=camping-tent">
+                                <h3>Southern Cross Camping Tent</h3>
+                            </a>
+
+                            <span class="rating"
+                                  aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </span>
+
+                            <p>$349.00</p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="similar-product">
+
+                        <a href="product.html?id=hiking-boots">
+
+                            <img src="images/product-boots.jpg"
+                                 alt="Summit Hiking Boots">
+
+                        </a>
+
+                        <div>
+
+                            <a href="product.html?id=hiking-boots">
+                                <h3>Summit Hiking Boots</h3>
+                            </a>
+
+                            <span class="rating"
+                                  aria-label="4 out of 5 stars">
+                                ★★★★☆
+                            </span>
+
+                            <p>$229.00</p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="similar-product">
+
+                        <a href="product.html?id=sleeping-bag">
+
+                            <img src="images/product-sleepingbag.jpg"
+                                 alt="Alpine Thermal Sleeping Bag">
+
+                        </a>
+
+                        <div>
+
+                            <a href="product.html?id=sleeping-bag">
+                                <h3>Alpine Thermal Sleeping Bag</h3>
+                            </a>
+
+                            <span class="rating"
+                                  aria-label="4 out of 5 stars">
+                                ★★★★☆
+                            </span>
+
+                            <p>$159.00</p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CUSTOMER REVIEWS -->
+        <section class="product-reviews-section">
+
+            <div class="container">
+
+                <h2>Reviews</h2>
+
+                <!-- Review 1 -->
+                <article class="customer-review">
+
+                    <div class="review-author">
+
+                        <div class="review-avatar"
+                             aria-hidden="true">
+                            &#128100;
+                        </div>
+
+                        <div>
+                            <h3>Alex Morgan</h3>
+                            <p>12 September 2026</p>
+
+                            <span class="rating"
+                                  aria-label="5 out of 5 stars">
+                                ★★★★★
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="review-text">
+                        <p>
+                            Great quality outdoor gear.
+                            Comfortable to use and well suited
+                            to weekend adventures. Would
+                            definitely recommend it.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Review 2 -->
+                <article class="customer-review">
+
+                    <div class="review-author">
+
+                        <div class="review-avatar"
+                             aria-hidden="true">
+                            &#128100;
+                        </div>
+
+                        <div>
+                            <h3>Jamie Wilson</h3>
+                            <p>4 August 2026</p>
+
+                            <span class="rating"
+                                  aria-label="4 out of 5 stars">
+                                ★★★★☆
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="review-text">
+                        <p>
+                            A practical product with a good
+                            design. The quality is impressive
+                            and it has performed well during
+                            several outdoor trips.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="shop-footer">
+
+        <div class="container text-center">
+
+            <nav aria-label="Footer navigation">
+
+                <a href="index.html">Home</a>
+                <span>|</span>
+
+                <a href="index.html#about">About</a>
+                <span>|</span>
+
+                <a href="shop.html">Shop</a>
+                <span>|</span>
+
+                <a href="index.html#help">Help</a>
+
+            </nav>
+
+            <p>
+                &copy; 2026 Aotearoa Adventure Gear
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Website JavaScript -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

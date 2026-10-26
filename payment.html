@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="en-NZ">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Review payment options for your Aotearoa Adventure Gear order.">
+
+    <title>Payment Options | Aotearoa Adventure Gear</title>
+
+    <link rel="stylesheet"
+          href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<script src="js/main.js"></script>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+    <header class="site-header">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png"
+                         alt="Aotearoa Adventure Gear Logo"
+                         class="site-logo">
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavigation"
+                        aria-controls="mainNavigation"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse"
+                     id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link"
+                               href="index.html#help">Help</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="cart-link" href="cart.html">
+                                &#128722; Your Cart
+                                <span id="cartCount">0</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="payment-page">
+
+        <!-- CHECKOUT PROGRESS -->
+        <section class="checkout-progress-section">
+            <div class="container">
+
+                <nav class="checkout-progress"
+                     aria-label="Checkout progress">
+
+                    <div class="checkout-step">
+                        1. Shopping Cart
+                    </div>
+
+                    <div class="checkout-step">
+                        2. Shipping Details
+                    </div>
+
+                    <div class="checkout-step active"
+                         aria-current="step">
+                        3. Payment Options
+                    </div>
+
+                </nav>
+
+            </div>
+        </section>
+
+        <!-- PAYMENT CONTENT -->
+        <section class="payment-content-section">
+            <div class="container">
+
+                <div class="payment-layout">
+
+                    <!-- LEFT: PAYMENT FORM -->
+                    <div class="payment-form-column">
+
+                        <h1>Payment method</h1>
+
+                        <form id="paymentForm" novalidate>
+
+                            <fieldset class="payment-methods">
+
+                                <legend class="visually-hidden">
+                                    Choose a payment method
+                                </legend>
+
+                                <!-- CREDIT CARD -->
+                                <div class="payment-method-card">
+
+                                    <label class="payment-method-heading">
+
+                                        <input type="radio"
+                                               name="paymentMethod"
+                                               value="card"
+                                               checked>
+
+                                        <span>
+                                            <strong>Credit Card</strong>
+                                            <small>
+                                                Demonstration payment.
+                                                No real card details required.
+                                            </small>
+                                        </span>
+
+                                    </label>
+
+                                    <div id="cardPaymentFields"
+                                         class="card-payment-fields">
+
+                                        <p class="payment-demo-note">
+                                            This is a simulated checkout.
+                                            Do not enter real card details.
+                                        </p>
+
+                                        <div class="payment-card-grid">
+
+                                            <div class="payment-field card-number-field">
+
+                                                <label for="demoCardNumber"
+                                                       class="visually-hidden">
+                                                    Demonstration Card Number
+                                                </label>
+
+                                                <input type="text"
+                                                       id="demoCardNumber"
+                                                       placeholder="0000 0000 0000 0000"
+                                                       inputmode="none"
+                                                       autocomplete="off"
+                                                       readonly
+                                                       value="0000 0000 0000 0000"
+                                                       aria-describedby="paymentDemoNote">
+
+                                            </div>
+
+                                            <div class="payment-field">
+
+                                                <label for="demoExpiry"
+                                                       class="visually-hidden">
+                                                    Demonstration Expiry Date
+                                                </label>
+
+                                                <input type="text"
+                                                       id="demoExpiry"
+                                                       placeholder="MM / YY"
+                                                       inputmode="none"
+                                                       autocomplete="off"
+                                                       readonly
+                                                       value="MM / YY">
+
+                                            </div>
+
+                                            <div class="payment-field">
+
+                                                <label for="demoCVV"
+                                                       class="visually-hidden">
+                                                    Demonstration CVV
+                                                </label>
+
+                                                <input type="text"
+                                                       id="demoCVV"
+                                                       placeholder="CVV"
+                                                       inputmode="none"
+                                                       autocomplete="off"
+                                                       readonly
+                                                       value="CVV">
+
+                                            </div>
+
+                                            <div class="payment-field card-holder-field">
+
+                                                <label for="demoCardHolder"
+                                                       class="visually-hidden">
+                                                    Card Holder Name
+                                                </label>
+
+                                                <input type="text"
+                                                       id="demoCardHolder"
+                                                       placeholder="Card Holder Name"
+                                                       inputmode="none"
+                                                       autocomplete="off"
+                                                       readonly
+                                                       value="DEMO CUSTOMER">
+
+                                            </div>
+
+                                        </div>
+
+                                        <span id="paymentDemoNote"
+                                              class="visually-hidden">
+                                            Demonstration values only.
+                                            Real card details are not accepted.
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                                <!-- PAYPAL -->
+                                <div class="payment-method-card">
+
+                                    <label class="payment-method-heading">
+
+                                        <input type="radio"
+                                               name="paymentMethod"
+                                               value="paypal">
+
+                                        <span>
+                                            <strong>PayPal</strong>
+                                            <small>
+                                                Simulated PayPal checkout.
+                                                No account login required.
+                                            </small>
+                                        </span>
+
+                                        <span class="paypal-wordmark"
+                                              aria-label="PayPal">
+                                            PayPal
+                                        </span>
+
+                                    </label>
+
+                                </div>
+
+                            </fieldset>
+
+                            <p id="paymentFormMessage"
+                               class="payment-form-message"
+                               role="status"
+                               aria-live="polite"></p>
+
+                            <div class="payment-actions">
+
+                                <button type="submit"
+                                        id="payNowButton"
+                                        class="cart-next-button">
+                                    Pay Now
+                                </button>
+
+                                <button type="button"
+                                        id="paymentCancelButton"
+                                        class="cart-cancel-button">
+                                    Cancel
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                        <!-- SUCCESS MESSAGE -->
+                        <div id="paymentSuccess"
+                             class="payment-success"
+                             role="status"
+                             aria-live="polite"
+                             hidden>
+
+                            <h2>Order Confirmed!</h2>
+
+                            <p>
+                                Thank you for shopping with
+                                Aotearoa Adventure Gear.
+                            </p>
+
+                            <p>
+                                This was a demonstration checkout.
+                                No payment has been processed.
+                            </p>
+
+                            <a href="shop.html"
+                               class="cart-next-button payment-shop-link">
+                                Continue Shopping
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT: ORDER SUMMARY -->
+                    <aside class="payment-summary-column">
+
+                        <h2>Summary</h2>
+
+                        <div id="paymentSummaryProducts">
+                            <!-- JavaScript adds products here -->
+                        </div>
+
+                        <details class="shipping-voucher">
+                            <summary>Have a voucher?</summary>
+
+                            <p>
+                                Voucher discounts are unavailable
+                                in this demonstration checkout.
+                            </p>
+                        </details>
+
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="paymentSubtotal">$0.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span id="paymentShipping">$0.00</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>GST (included)</span>
+                            <span id="paymentGST">$0.00</span>
+                        </div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <strong id="paymentTotal">$0.00</strong>
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="shop-footer">
+
+        <div class="container text-center">
+
+            <nav aria-label="Footer navigation">
+                <a href="index.html">Home</a>
+                <span>|</span>
+                <a href="index.html#about">About</a>
+                <span>|</span>
+                <a href="shop.html">Shop</a>
+                <span>|</span>
+                <a href="index.html#help">Help</a>
+            </nav>
+
+            <p>&copy; 2026 Aotearoa Adventure Gear</p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
